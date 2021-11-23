@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+.main-dial{
+    position: relative;
+    margin: auto;
+    margin-top: 220px;
+    background: #f2d1cb;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: inset 2px -2px 8px #997771, inset -2px 2px 8px #997771;
+}
+.main-dial::before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 240px;
+    width: 240px;
+    background: black;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 3px white, inset 8px 5px #6c757d, 
+                inset -2.5px -1px 2.5px white, inset -5.5px 3px #6c757d;
+}
+.main-dial::after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+    margin: auto;
+}
+.screen{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #ff477e, #ac46a1);
+    z-index: 1;
+    border-radius: 50%;
+}
+.screen::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(5deg, #ff5c8a, #ffc2d4);
+    -webkit-mask: linear-gradient(#fff, transparent);
+    mask: linear-gradient(#fff, transparent);
+    border-radius: 50%;
+    z-index: 1;
+}
+.hands{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    height: 80px;
+    width: 5px;
+    background: #fff;
+    border-radius: 50px;
+    z-index: 2;
+    transform: rotate(45deg);
+    box-shadow: 0px 0px 10px #ff5c8a;
+}
+.hands::before{
+    content: '';
+    position: absolute;
+    bottom: -38%;
+    right: 500%;
+    height: 54px;
+    width: 9px;
+    background: #fff;
+    border-radius: 50px;
+    z-index: 2;
+    transform: rotate(-103deg);
+    box-shadow: 0px 0px 10px #ff5c8a;
+}
+
+.hands::after{
+    content: '';
+    position: absolute;
+    top: 65%;
+    left: 330%;
+    height: 100px;
+    width: 2px;
+    background: #fff;
+    border-radius: 50px;
+    z-index: 2;
+    transform: rotate(150deg);
+    box-shadow: 0px 0px 10px #ff5c8a;
+}
+.hands-holder{
+    position: absolute;
+    top: 48.5%;
+    left: 48.5%;
+    background: #fff;
+    width: 13px;
+    height: 13px;
+    z-index: 3;
+    border-radius: 50%;
+    box-shadow: 0.5px 0.5px 0.5px #ff5c8a,
+                 -0.5px 0.5px 0.5px #ff477e;
+}
+
+.hands-holder::after{
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background: #ff477e;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+ 
+}
